@@ -194,6 +194,9 @@ function appendageWhyDoesChromeMakeThisFunctionApartOfTheFuckingWindowObjectOnIt
 	return predictedText;
 }
 window.trainingData = ack;
-window.appendage = appendageWhyDoesChromeMakeThisFunctionApartOfTheFuckingWindowObjectOnItsOwn;
-window.contextRange = 10;
-window.nextToken = (inp) => {return nextTokenWhyDoesChromeMakeThisFunctionApartOfTheFuckingWindowObjectOnItsOwn(inp,window.trainingData,window.contextRange);};
+window.Joel = {
+	nextToken: (inp) => {return nextTokenWhyDoesChromeMakeThisFunctionApartOfTheFuckingWindowObjectOnItsOwn(inp,window.trainingData,window.Joel.contextRange);},
+	appendage:appendageWhyDoesChromeMakeThisFunctionApartOfTheFuckingWindowObjectOnItsOwn,
+	contextRange:10
+};
+
