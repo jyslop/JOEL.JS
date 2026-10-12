@@ -54,6 +54,9 @@ function wordLevenmergenshmergenbergsteinGoldistance(seqA, seqB){//last function
   }
   return dp[m][n];
 }
+function normalizeNgramDiff(diff,factor=500){
+	return (factor-Math.min(diff,factor));
+}
 let ack = [
     `ok everyone I would like to make it very clear that we are not racist for saying the n word we are being honest not to forget 
 	that we honestly have nothing against Black people or people of “black culture” we are being honest and are not sugarcoating 
@@ -171,7 +174,7 @@ function nextTokenWhyDoesChromeMakeThisFunctionApartOfTheFuckingWindowObjectOnIt
 	}
 	
 	let inputContext = inputTokens.slice(0,inputTokens.length-2).join(' ');
-	let score = (a,b) => {return (Similarity(a,b)/2)+wordLevenmergenshmergenbergsteinGoldistance(a,b)};
+	let score = (a,b) => {return (Similarity(a,b)/2)+(normalizeNgramDiff(wordLevenmergenshmergenbergsteinGoldistance(a,b),50)/50)};
 	suitablePairs.sort((a,b)=>score(b.context,inputContext)-score(a.context,inputContext));
 	
 	let result = suitablePairs[Math.floor(Math.random()*(suitablePairs.length/2))];
