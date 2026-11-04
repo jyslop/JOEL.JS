@@ -700,7 +700,7 @@ fuckface.onclick = () => {
 					'\n positivity:'+(0.9-Utils.Aggression(d.text)).toString()
 				 );
                  entities[d.guid].rating.r-=0.005; entities[d.guid].rating.f+=0.005;
-                 if (!ackgro.includes(d.text)) ackgro.push(nullify(d.text));
+                 //if (!ackgro.includes(d.text)) ackgro.push(nullify(d.text));
                  if(entities[d.guid].rating.r < -0.2 && entities[d.guid].rating.f > 0.2){
                      if(bz){
                          window.hates.push('you');
