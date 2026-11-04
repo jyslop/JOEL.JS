@@ -679,7 +679,7 @@ const SEED_RE = /\byou\b|\bme\b|\byour\b|\bur\b|\byou're\b|\byoure\b|\bi\b/g;
 function seedify(inp){
   return inp.replace(SEED_RE, c => SEED_MAP[c]);
 }
-fuckface.onclick = () => {
+fuckface.onclick = async () => {
 
         const d = {guid:'you',text:fuckfacei.value};
 
