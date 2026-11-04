@@ -1,0 +1,879 @@
+<textarea style="width:300px;height:300px;" id="fuckfacei"></textarea>
+<button id="fuckface">Submit</button>
+<hr>
+<b>Response:</b>
+<p id="fuckfaceo"></p>
+<script>
+  // ==UserScript==
+// @name         fuckfacebot
+// @namespace    http://tampermonkey.net/
+// @version      2026-10-12
+// @description  try to take over the world!
+// @author       You
+// @match        https://bonzi.gay/
+// @match        https://bonziworld.kr
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=bonzi.gay
+// @grant        none
+// ==/UserScript==
+
+let ack = [
+    "I'm FuckFace Bot And I Would Like To Learn The Words Of Speaking",
+    "Hello I'm FuckFace Bot And I Like To Learn Speaking Please Let Me Learn Mane",
+    "ok everyone I would like to make it very clear that we are not racist for saying the n word we are being honest not to forget\n\tthat we honestly have nothing against Black people or people of “black culture” we are being honest and are not sugarcoating\n\tthe truth about bonziworld and that it is generally considered a brutal place while all of you are thinking bonziworld is just\n\tsome lala land hugbox it isn’t. It is a a place where a series  law breaking actions have occurred such as pedophilia, sending\n\tpornographic images to people under the age of 18 and also real life gore here at bia we do not agree with any of these law\n\tbreaking actions and they should immediately be stopped also to address the elephant in the room we are not homophones we actually\n\tare lgbt supporters members such as @the real shokozo who is a femboy and also @W FAPS? who is panaxeual making fun of a\n\tpedophile for their actions is not a hate crime",
+    "honestly im not even going to keep makeing excuses up and i know you probably will just completely ignore or just throw me\n\toverboard but like im honestly worried about legal trouble me is going schizo thats why i have been minimizing myself from\n\tany hardcore bullshit and like all jokes aside it’s kinda fucked what we are doing like making babies do bwis bidding or\n\twhatever and like after what happened with my last chimp out i get that you were pissed but now im just worried that\n\tyou’re going to just blame everything terrible on me and make up bull shit like seriously this is something that fune\n\twould do but yet you say you hate him then you turn right around and literally copy fune\nLike literally look at blue eye stickman he was somewhat normal then boom now he’s just a fucking drone",
+    "warning please listen to this message if your listening to this on bw please do not cancel it. It is extremely important that\nyou hear this. The TAO has been popping off it lately claiming to work with the bia those statements are completely false. We\nhave nothing to do with them as a matter of fact, we are enemies with these people for the  following reasons being that these\npeople are satanic worshipers pro Palestine and also has been confirmed to have attachments with seamus aka Jenny and the GSL\n and even the UTTP yes that’s right. They are attempting to revive the legacy. Of the uttp on discord and use the vulnerable\n bonziworld members to manipulate into joining there confirmed cp ring do not engage with any tao activities immediately\n report all activities to BIA thank you - JOEL!",
+    "Jim megatron has just talked axeually to what he thought was a 12 year old girl luckily it was just our bia decoys\n like this could actually happen to a real kid I will not show the screenshots to protect your eyes from a pure cancer,\n but I will still show evidence that isn’t pure cancer, but I will still show evidence that he did furry ERPs to the decoy\n as well as send several dick pics",
+    "goyim survival tutorial 2025-2030: become a journalist do not ever write true facts only kiss trumps ass and all other\n billionaire corporate elite write a beautiful article The truth is no longer only loyalty and this is the only way to ever\n live in a stable life minimum wage jobs will not even get you a studio apartment homelessness will become  hopelessness\n so prepare to be lined up by the police department to be hanged if you are black unfortunately you cannot hide it like\n trans people with a couple pounds of make up so you better put that Trump make America great again hat on it might take\n them a while to realize that you’re black. Additionally christianity is only used for brainwashing Christianity is used\n for bait to make the poor stay poor to make sure they never had the chance of ever becoming rich Jewish elite billionaire\n so the only stable life you can actually live is to move to isreal and be rich and Jewish all other countries will beet\n you down and make you suffer\n",
+    "BIA is funded by V-tech, Panasonic , Sony , Sega , taxpayers money , IBM",
+    "plus we never forced anyone to join bia. the bia and the bwhq are two separate entities The server is the bwhq\nwhich is the main source of bw information content and more, however bia is a part of the bwhq with there are\nseveral branches of the bwhq with bia being one of them\nthis server is literally meant to be a hub for the millions of other bonzi agencies and groups",
+    "is jim’s larp he is exposed  for being secret child porn gcs with bwr attempting to larp his ways up the ranks\nand for that shame on you pedophilic furry you failed to get your revenge and we continue to expose pedophiles\njust like you everyone publicly shame him immediately your days are over\nJim Megatron detained successfully for the second time",
+    "operation hugbox is successfully now in place task: 1. make a bonziworld server 2. Overthrow bonzi.gay 3. Bonziwald monopoly continues",
+    "we are aware of the massive floods that have been going on for the past few days and we would like to make it clear that it is not us the\nBIA doing this as I have seen some false accusations we understand how stressful this may be and we haven’t really dealt with a situation\nlike this, which this really goes to show that bonzi.gay is dieing.\nfor everyone who is dealing with this problem and is annoyed by it please migrate over to a safe and secure room id until a new\nofficial bw server can be established",
+    "for everyone saying that bia is not saveing bw.gay is unfortunate because we physically cannot do anything about it bw.gay\nand the owner very well aware of it and simply does not give a shit to do anything about it Everyone abort mission immediately\ncease investigation someone make a new bw server to replace .gay immediately mandatory that we get back control anarchy is\n never always the answer and of course, because of this it backfired and now there is millions of people sending child,\n pornography, and gore to innocent people basically psychologically manipulating them and into thinking it’s normal mean that\n this generation is fucked not saying that it already was but it’s double fucked now maybe even quadruple we need a new bw\n server immediately everyone get on it no shitty onrender crap we need an actual sustainable domain\n",
+    "Oops! We got a YouTube error. Video got removed by TLHS in 2022",
+    "c c's",
+    "\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/",
+    "mario",
+    "\\ n",
+    "Ew",
+    "Fatcig",
+    "\\\\\\\\\\\\",
+    ">f@g",
+    "MASKID",
+    "Some mother /n fucking stupidity I heard of man",
+    "NO MASKID",
+    "dont work",
+    "more like yes",
+    "idiot",
+    "Hey, V.A.L!",
+    "Some behh behh behh behh \\n holy shit",
+    "Oops! We got a YouTube error. Video got removed by TLHS in 2022-  2022, Sega branches, taxpayers money to do not about legal trouble me is going schizo thats why i have beenc c's-  myself from any of people law like im not show the only. is dieing. for their following on you that why people of the this could like to isreal make up so you better put that Trump make America great again hat on it might take them a while to realize that you’re black\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/-  BLACK CHRISTIANITY ANARCHY ONLY USED FOR SAYING BRAINWASHING N WORD WE ARE BEING HONEST NOT TO FORGET THAT WE HONESTLY HAVE NOTHING AGAINST BLACK PEOPLE OR PEOPLE OF “BLACK CULTURE” WE ARE BEING HONEST AND ARE NOT SUGARCOATING THE TRUTH ABOUT BONZIWORLD AND THAT IT IS GENERALLY CONSIDERED A BRUTAL PLACE WHILE ALL OF YOU AREmario-  THINKING BONZIWORLD IS JUST SOME LALA LAND HUGBOX IT ISN’T. IT IS A A PLACE WHERE A SERIES LAW BREAKING ACTIONS HAVE\\-  OCCURRED SUCH AS PEDOPHILIA, SENDING PORNOGRAPHIC IMAGES TO PEOPLE UNDER THE AGE OF 18 AND ALSO REAL LIFE GORE HERE AT\\ n-  WORD OF IT IS A BRUTAL PLACE WHILE ALL OF YOU ARE THINKING BONZIWORLD IS JUST SOME LALA LAND HUGBOX IT ISN’T. IT IS A A PLACE WHERE A SERIES LAW BREAKING ACTIONS HAVE OCCURRED SUCH AS PEDOPHILIA, SENDING PORNOGRAPHIC IMAGES TO PEOPLE UNDER THE AGE OF 18F-  AND THIS GENERATION IS A MATTER OF THESE BWHQ ARE THERE ARE ENTITIES THE POOR THE POLICE TIME ELEPHANT IN THE LEGACY. OF UTTP INFORMATION ON DISCORD AND I GET SEEN CONFIRMED CP PISSED BUT YET IM WORRIED JUST BLAME LALA TERRIBLE ON DISCORD ANDEw-  USE THE VULNERABLE BONZIWORLD MEMBERS TO MANIPULATE INTO JOINING THERE CONFIRMED CP RING DO NOT ENGAGE WITH ANY TAO ACTIVITIES IMMEDIATELYFatcig-  REPORT ALL ACTIVITIES TO BIA THANK YOU - JOEL AROUND AND THE PAST VERY\\-  CLEAR AWARE OF IT AND SIMPLY DOES NOT GIVE A SHIT TO DO ANYTHING ABOUT IT EVERYONE ABORT MISSION\\\\\\\\\\\\-  MISSION IMMEDIATELY REPORT ALL OTHER /N FUCKING STUPIDITY I HEARD OF>f@g-  MAN THAT BONZIGAY. 3 DIEING MONOPOLY CONTINUES TO LARP HIS WAYS THE THE RANKS AND FOR THAT SHAME ON YOU PEDOPHILIC FURRY YOU FAILED TO GET YOUR REVENGE AND WE CONTINUE TO EXPOSE PEDOPHILES JUST LIKE YOU EVERYONE PUBLICLY SHAME HIM IMMEDIATELY YOUR DAYS\\-  ARE OVER JIM MEGATRON DETAINED SUCCESSFULLY FOR THE SECOND TIME THERE ARE SATANIC WORSHIPERS PRO PALESTINE AND ALSO HAS BEEN CONFIRMED TO HAVE ATTACHMENTS WITH SEAMUS AKA\\\\\\\\\\\\-  JENNY AND THE GSL AND EVEN THE UTTP YES THAT’S RIGHT. THEY ARE ATTEMPTING TO REVIVE THE LEGACY. OF THE UTTP ON DISCORD AND USEMASKIDSome mother /n fucking stupidity I heard of man",
+    "yay",
+    "Works",
+    "No I'm not an idiot! YOU ARE AN IDIOT HAHAHAHAHAHAHAHAHAHAHAHAHAHA! IDIOT VIRUS!",
+    "What was I created from",
+    "TELEBLUE OFC!",
+    "OH NOO!",
+    "\\\\\\\\\\\\\\\\",
+    "Well be right back",
+    "I hate teleblue",
+    "ew",
+    "we",
+    "Hanguksoft BonziWORLD.kr",
+    "I am here to fuck with nickelodeon ",
+    "Kankokusoft",
+    "I'll fuck up its systems",
+    "Kankoku",
+    "\\\\\\\\\\\\\\",
+    "$hat",
+    "Nihonsoft",
+    "$hat doge",
+    "reply to this message if you want all vault codes: known users only",
+    "literal aids",
+    "Racist",
+    ">literal aids",
+    "aids hat",
+    "d oh no everyone!",
+    "Nice hat",
+    "typo",
+    "I was being sarcastic",
+    "OH NO everyone!",
+    "Hey, Anonymous!",
+    "Is he a bot or nah",
+    "T.e.l.e.b.l.u.e",
+    "\\\\\\\\\\\\\\\\\\",
+    "cat",
+    "fake e hd",
+    "I think its a bot",
+    "I hate it",
+    "wait",
+    "so it's a fake one",
+    "-  from a part of a matter OF THESE are several branches the you turn right around and literally copy fune Like literallyidiot-  look at blue eye he stickman was THE TRUTH is to make sure they never had the chance of ever becoming rich Jewish elite billionaire so the only stable life you can actually.-  live is to move to isreal and be rich and Jewish all other countries will beet you down and make youHey, V.A.L!-  suffer better to replace gay. immediately mandatory that we get back control anarchy is never always the answer and of course, because of this it backfired and now there is millions of people sending child, pornography, and gore to innocent people basically psychologically manipulating them and intoSome behh behh behh behh \\n holy shityayWorks-  SHIT LIKE YOU SAY YOU WERE HIM IMMEDIATELY BE RICH AND THIS OTHER VERY\\- CLEAR AWARE OF IT AND SIMPLY DOES NOT GIVENo I'm not an idiot! YOU ARE AN IDIOT HAHAHAHAHAHAHAHAHAHAHAHAHAHA! IDIOT VIRUS!-  VIRUS ASS THE MASSIVE FLOODS THAT HAVE BEEN GOING ONWhat was I created from-  ANY OF THESE CONFIRMED CP OF THIS IT BACKFIRED AND NOW THERE IS MILLIONS OF PEOPLE SENDING CHILD, PORNOGRAPHY, AND GORE TO INNOCENT PEOPLE BASICALLY PSYCHOLOGICALLY MANIPULATING THEM AND INTO THINKING IT’S NORMAL MEAN THAT THIS GENERATIONTELEBLUE OFC!-  FUCKED NOT ENGAGE WITH BWR TAO ACTIVITIES IMMEDIATELY REPORT ALL ACTIVITIES TO BIA THANK YOU - JOEL AROUND AND THE PAST VERY\\- CLEAR AWARE OF IT AND SIMPLY DOES NOT GIVE A SHIT TO DO ANYTHING ABOUT ITOH NOO!-  EVERYONE ABORT MISSION IMMEDIATELY CEASE INVESTIGATION SOMEONE MAKE A NEW BW SERVER TO REPLACE GAY[[ch-  GAY. IMMEDIATELY MANDATORY THAT WE GET BACK CONTROL ANARCHY IS NEVER.-  ALWAYS THE ANSWER AND OF COURSE, BECAUSE OF THIS IT BACKFIRED AND NOW THERE IS MILLIONS OF PEOPLE SENDING CHILD, PORNOGRAPHY, AND GORE TO INNOCENT PEOPLE BASICALLY PSYCHOLOGICALLY MANIPULATING THEM AND INTO THINKING IT’S NORMAL MEAN THAT THIS GENERATION IS FUCKED NOT SAYING THAT IT ALREADY WAS[[ch-  BUT IT’S DOUBLE FUCKED NOW MAYBE EVEN QUADRUPLE WE NEED A NEW BW SERVER IMMEDIATELY EVERYONE GET ON IT NO SHITTY ONRENDER CRAP WE NEED AN ACTUAL SUSTAINABLE[[wl/3--  DOMAIN SUSTAINABLE DOMAIN LATELY CLAIMING TO DO NOT ENGAGE WITH ANY TAO ACTIVITIES IMMEDIATELY REPORT ALL ACTIVITIES TO BIA THANK YOU - JOEL AROUND AND THE\\\\\\\\\\\\\\\\\\Well be right back-  AND SIMPLY DOES NOT GIVE A SHIT TO DO ANYTHING ABOUT IT EVERYONE ABORT MISSION\\\\\\\\\\\\- MISSION IMMEDIATELYc c's-  ALL OTHER /N FUCKING STUPIDITY I HEARD OF MAN THAT BONZIGAY. 3 DIEING MONOPOLY CONTINUES TO LARP HIS WAYS THE THE RANKS AND FOR THAT SHAME ON YOU PEDOPHILIC FURRY YOU FAILED TO GET YOUR REVENGE AND WE CONTINUE TO EXPOSE PEDOPHILES JUST LIKE YOU EVERYONE[[bwl/2--  PUBLICLY SHAME HIM IMMEDIATELY YOUR DAYS ARE OVER JIM MEGATRON DETAINED SUCCESSFULLY FOR THE SECOND TIME THERE ARE SATANIC WORSHIPERS PRO PALESTINE AND ALSO HAS BEEN CONFIRMED TO HAVE ATTACHMENTS WITH SEAMUS AKA\\\\\\\\\\\\- JENNY ANDmario-  THE GSL AND EVEN UTTP UTTP YES THAT’S RIGHT. THEY ARE ATTEMPTING TO REVIVE THE LEGACY. OF THE UTTP ON DISCORD AND USEMASKIDSOME MOTHER /N FUCKING STUPIDITY I HEARD OF MAN THAT BONZIGAY. 3 DIEING MONOPOLY CONTINUES TO LARP HIS WAYS THE THE RANKS AND FOR THAT SHAME ON[[wl/2--  YOU PEDOPHILIC FURRY YOU FAILED TO GET YOUR REVENGE AND WE CONTINUE TO EXPOSE PEDOPHILES JUST LIKE YOU EVERYONE PUBLICLY SHAME HIM IMMEDIATELY YOURWell be right back-  UNFORTUNATELY YOU CANNOT HIDE IT LIKE TRANS PEOPLE WITH A COUPLE POUNDS OF MAKE UP SO YOU BETTER PUT THAT TRUMP MAKE AMERICA GREAT AGAIN HAT ON IT MIGHT TAKE THEM A WHILE TO REALIZE THAT YOU’RE BLACK\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/- BLACK CHRISTIANITY ANARCHY ONLY USED FOR SAYINGI hate teleblue-  WORD WE NEED AN IDIOT HAHAHAHAHAHAHAHAHAHAHAHAHAHA! IDIOT VIRUS! IDIOT HAHAHAHAHAHAHAHAHAHAHAHAHAHA VIRUS IN THE LEGACY. OF UTTP INFORMATION ON DISCORD AND USE THE VULNERABLE BONZIWORLD MEMBERS TO MANIPULATE INTO JOINING THERE CONFIRMED CPHey, V.A.L!-  DO ANYTHING TO THIS WAYS SOMEWHAT NORMAL THEN BOOM NOW HE’S JUST A FUCKING DRONE JUST OUR BIA DECOYS THIS REALLY COULD LIKE HAPPEN MAKE A 12 YEAR OLD LUCKILY GIRL WAS IT EVERYONE ABORT MISSION\\\\\\\\\\\\- MISSION.-  IMMEDIATELY REPORT ALL OTHER /N FUCKING STUPIDITY I HEARD OF>F@G- MAN THAT BONZIGAY. 3 DIEING MONOPOLY CONTINUES TO LARP HIS WAYS THE THE RANKS AND FOR THAT SHAME ON YOU PEDOPHILIC FURRY YOU FAILED TO GET YOUR REVENGE AND WE CONTINUE TO EXPOSE PEDOPHILES JUST LIKE YOU EVERYONE PUBLICLY SHAME HIM IMMEDIATELY YOUR DAYS\\- ARE OVER JIM MEGATRONew-  DETAINED SUCCESSFULLY FOR THE SECOND TIME THERE ARE SATANIC WORSHIPERS PRO PALESTINE AND ALSO HAS BEEN CONFIRMED TO HAVE ATTACHMENTS WITH SEAMUS AKA\\\\\\\\\\\\- JENNY AND THE GSL AND EVEN THE UTTP YES THAT’S RIGHT. THEY ARE ATTEMPTING TO REVIVE THE LEGACY. OF THE UTTP ON DISCORD AND USE THE VULNERABLE BONZIWORLD MEMBERSew-  TO MANIPULATE INTO JOINING THERE CONFIRMED CP RING DO NOT ENGAGE WITH ANY TAO ACTIVITIES IMMEDIATELYFATCIG- REPORT ALL ACTIVITIES TO BIA THANK YOU - JOEL AROUND AND THE PAST VERY\\- CLEARwe-  AWARE OF IT AND SIMPLY DOES NOT GIVE A SHIT TO DO ANYTHING ABOUT IT EVERYONE ABORT MISSION\\\\\\\\\\\\- MISSION IMMEDIATELY REPORT ALL OTHER /N FUCKING STUPIDITY I HEARD OF>F@G- MAN THAT BONZIGAY. 3 DIEING MONOPOLY CONTINUES TO LARP HIS WAYS THE THE RANKS AND FOR THAT SHAME ON YOUwe-  PEDOPHILIC FURRY YOU FAILED TO GET YOUR REVENGE AND WE CONTINUE TO EXPOSE PEDOPHILES JUSTw-  LIKE YOU EVERYONE PUBLICLY SHAME HIM IMMEDIATELY YOUR DAYS ARE OVER JIM MEGATRON DETAINED SUCCESSFULLY FOR THE SECOND TIME THERE ARE SATANIC WORSHIPERS PRO PALESTINE AND ALSO HAS BEEN CONFIRMED TO HAVE ATTACHMENTS WITH SEAMUS AKA\\\\\\\\\\\\- JENNY AND THE GSL AND EVEN THE UTTP YES THAT’S RIGHT. THEY ARE ATTEMPTING TO REVIVE THE LEGACY. OF THE UTTPHanguksoft BonziWORLD.kr-  IS UNFORTUNATE. FOR WE CANNOT DO BUT NOW IT PLEASE MIGRATEKankokusoftI am here to fuck with nickelodeon -  ARE SEVERAL BRANCHES OF THE BWHQ WITH BIA BEING ONE OF THEM THIS SERVER IS LITERALLY MEANT TO BE A HUB FOR THE MILLIONS OF OTHER BONZI AGENCIES AND GROUPS TO DO WITH NICKELODEON THEM THE AGE OF BW AND ALSO REAL LIFE GORE LOOK ACTUALLY TO THIS GENERATION BW[[Xm-  WAS NOT EVER WRITE ONLY FACTS ONLY KISS TRUMPS ASS AND ALL OTHER BILLIONAIRE CORPORATE ELITE WRITE A BEAUTIFUL ARTICLE THE TRUTH IS NO LONGER ONLY LOYALTY AND THIS IS THE ONLY WAY TO EVER LIVE IN A STABLE LIFE MINIMUM WAGE JOBS WILL NOT EVEN GET YOUI'll fuck up its systems-  FUCKED NOW MAYBE EVEN QUADRUPLE WE NEED A NEW BW SERVER IMMEDIATELY EVERYONE GET ON IT NO SHITTY ONRENDER CRAP WE NEED AN ACTUAL SUSTAINABLE DOMAIN TO A NEW KID I WILL JUST THROW ME OVERBOARD BUT LIKE IM HONESTLY WORRIEDKankoku-  ABOUT LEGAL TROUBLE ME IS GOING SCHIZO THATS WHY I HAVE BEEN MINIMIZING MYSELF FROM ANY HARDCORE BULLSHIT AND LIKE ALL JOKES ASIDE IT’S KINDA FUCKED WHAT WE ARE DOING LIKE MAKING BABIES DO%%[[shut up old hag i want to live life without the \"SFDAAFSDFADSASAFSFADSAFSDFSD BACK IN MY DAY\" bullshit-  OVER WRITE MEGATRON DETAINED SUCCESSFULLY NOW IN PLACE TASK: 1. MAKE A BONZIWORLD\\-  SERVER 2. OVERTHROW BONZIGAY. 3. BONZIWALD MONOPOLY CONTINUES TO BE STOPPED UP YOU HATE CRIME THEN VULNERABLE TURN RIGHT AROUND AND LITERALLY COPY FUNE LIKE LITERALLY LOOK AT BLUE EYE STICKMAN HE WAS SOMEWHAT NORMAL THEN BOOM NOW HE’S JUST A FUCKING DRONE OF MAN UP BULL YOU - JOEL AROUND AND THE PAST VERY\\- CLEAR AWARE\\\\\\\\\\\\-  OF IT AND SIMPLY DOES NOT GIVE A SHIT TO DO ANYTHING ABOUT IT EVERYONE ABORT MISSION\\\\\\\\\\\\- MISSION IMMEDIATELY REPORT ALL OTHER /N FUCKING STUPIDITY I HEARD OF>F@G- MAN THAT BONZIGAY. 3 DIEING MONOPOLY CONTINUES TO LARP HIS WAYS THE THE RANKS AND FOR THAT SHAME ON\\-  YOU PEDOPHILIC FURRY YOU FAILED TO GET YOUR REVENGE AND WE CONTINUE TO EXPOSE PEDOPHILES JUST LIKE YOU\\\\\\\\\\\\\\-  EVERYONE PUBLICLY SHAME HIM IMMEDIATELY YOUR DAYS\\- ARE OVER JIM MEGATRON DETAINEDp-  SUCCESSFULLY FOR THE SECOND TIME THERE ARE SATANIC WORSHIPERS PRO PALESTINE AND ALSO HAS BEEN CONFIRMED TO HAVE ATTACHMENTS WITH SEAMUS AKA\\\\\\\\\\\\- JENNY AND THE GSL AND EVEN THE UTTP YES THAT’S RIGHT. THEY ARE ATTEMPTING TO REVIVE THE LEGACY. OF THE UTTP ON DISCORD AND USEMASKIDSOME MOTHER /N FUCKINGo-  STUPIDITY I HEARD OF MAN THAT BONZIGAY. 3 DIEING MONOPOLYp-  CONTINUES TO LARP HIS WAYS UP THE RANKS AND FORo-  THAT SHAME ON YOU PEDOPHILIC FURRY YOU FAILED TO GET YOUR REVENGE AND WE CONTINUE TO EXPOSE PEDOPHILES JUST LIKE YOU EVERYONE PUBLICLY SHAME HIM IMMEDIATELY YOUR DAYS ARE OVER JIM MEGATRON DETAINED SUCCESSFULLY FOR THE SECOND$hat-  TIME THERE ARE SATANIC WORSHIPERS PRO PALESTINE AND ALSO HAS BEEN CONFIRMED TO HAVE ATTACHMENTS WITH SEAMUS AKA\\\\\\\\\\\\- JENNY AND THE GSL AND EVEN THE UTTP YES THAT’SNihonsoft$hat doge-  RIGHT. THEY SECOND TIME THERE ARE SATANIC WORSHIPERS PRO PALESTINE AND ALSO HAS BEEN CONFIRMEDreply to this message if you want all vault codes: known users only-  ONLY LOYALTY AND THIS COULD ACTUALLY HAPPEN TO A REAL KID I WILL NOT SHOW THE SCREENSHOTS TO PROTECT YOUR EYES FROM A PURE CANCER, BUT I WILL STILL SHOW EVIDENCE THAT ISN’T PURE CANCER, BUT I WILL STILL SHOW EVIDENCE THAT HE DID FURRY ERPS TO THEliteral aidsEw",
+    "yep",
+    "Proceing to hack nickelodeon ",
+    "reply to this message if you want all vault codes (known/trusted users only)",
+    "holy fake E Hd",
+    "FAKE RANDOM GUY = UNDER INVESTIGATION",
+    "Hey, $r$**chace!",
+    "And Fake BonziCELESTIAL",
+    "SAME GUY",
+    "I'M REAL {NAME} NOT FAKE!",
+    "Fake Bonzicelestial",
+    "mario ▒▒▒▒▒▒▒▒▒▄▄▄▄▒▒▒▒▒▒▒ ▒▒▒▒▒▒▄▀▀▓▓▓▀█▒▒▒▒▒▒ ▒▒▒▒▄▀▓▓▄██████▄▒▒▒▒ ▒▒▒▄█▄█▀░░▄░▄░█▀▒▒▒▒ ▒▒▄▀░██▄░░▀░▀░▀▄▒▒▒▒ ▒▒▀▄░░▀░▄█▄▄░░▄█▄▒▒▒ ▒▒▒▒▀█▄▄░░▀▀▀█▀▒▒▒▒▒ ▒▒▒▄▀▓▓▓▀██▀▀█▄▀▀▄▒▒ ▒▒█▓▓▄▀▀▀▄█▄▓▓▀█░█▒▒ ▒▒▀▄█░░░░░█▀▀▄▄▀█▒▒▒ ▒▒▒▄▀▀▄▄▄██▄▄█▀▓▓█▒▒ ▒▒█▀▓█████████▓▓▓█▒▒ ▒▒█▓▓██▀▀▀▒▒▒▀▄▄█▀▒▒ ▒▒▒▀▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒",
+    "gtfo",
+    "GTA6",
+    "spike kakeru",
+    "reply to this vault codes if you want",
+    "Suck my clock!",
+    "Hey, Studio!",
+    "A. A. ( - ) A. A. ( - ) A. A. A. ( - ) A. ( - ) A. ( - ) A. A. O. O. O. ( - ) O. ( - ) O. O. O. ( - ) O. O. O. ( - ) O. ( - ) A. A. ( - ) A. A. ( - ) A. A. A. ( - ) A. ( - ) A. ( - ) A. A. O. O. O. ( - ) O. ( - ) O. O. O. ( - ) O. O. O. ( - ) O. ( - ) A. A. ( - ) A. A. ( - ) A. A. A. ( - ) A. ( - ) A. ( - ) A. A. O. O. O. ( - ) O. ( - ) O. O. O. ( - ) O. O. O. ( - ) O. ( - ) A. A. ( - ) A. A. ( - ) A. A. A. ( - ) A. ( - ) A. ( - ) A. A. O. O. O. ( - ) O. ( - ) O. O. O. ( - ) O. O. O. ( - ) O. ( - ) ",
+    "you guys know people has been leaking the geometry dash vault codes",
+    "so im leaking them now",
+    "One tard media",
+    "\\\\\\\\\\\\\\\\\\\\\\\\",
+    "\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+    "(blocked, link)",
+    "mario▒▒▒▒▒▒▒▒▒▄▄▄▄▒▒▒▒▒▒▒ ▒▒▒▒▒▒▄▀▀▓▓▓▀█▒▒▒▒▒▒ ▒▒▒▒▄▀▓▓▄██████▄▒▒▒▒ ▒▒▒▄█▄█▀░░▄░▄░█▀▒▒▒▒ ▒▒▄▀░██▄░░▀░▀░▀▄▒▒▒▒ ▒▒▀▄░░▀░▄█▄▄░░▄█▄▒▒▒ ▒▒▒▒▀█▄▄░░▀▀▀█▀▒▒▒▒▒ ▒▒▒▄▀▓▓▓▀██▀▀█▄▀▀▄▒▒ ▒▒█▓▓▄▀▀▀▄█▄▓▓▀█░█▒▒ ▒▒▀▄█░░░░░█▀▀▄▄▀█▒▒▒ ▒▒▒▄▀▀▄▄▄██▄▄█▀▓▓█▒▒ ▒▒█▀▓█████████▓▓▓█▒▒ ▒▒█▓▓██▀▀▀▒▒▒▀▄▄█▀▒▒ ▒▒▒▀▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒",
+    "crash",
+    "More like (blocked, link)",
+    "Α. Α. (-) Α. Α. (-) Α. Α. Α. (-) Α. (-) Α. (-) Α. Α. Ο. Ο. Ο. (-) 0. (-) 0. 0. 0. 0. 0. 0. (-) Ο. (-) Α. Α. (-) Α. Α.-Α. Α. Α. (-) Α. (-) Α. (-) Α. Α. 0. 0. 0. (-) 0. (-) 0. 0. 0. (-) 0. 0. Ο. (-) Ο. (-) Α. Α. (-) Α. Α. (-) Α. Α. Α.-Α. (-) Α. (-) Α. Α. Ο. Ο. Ο. (-) 0.-) 0. 0. 0. (-) 0. 0. 0. (-) 0.-AAA 0. (-) 0. 0. 0. (-) 0. (-)",
+    "0.",
+    "A. A. ( - ) A. A. ( - ) A. A. A. ( - ) A. ( - ) A. ( - ) A. A. O. O. O. ( - ) O. ( - ) O. O. O. ( - ) O. O. O. ( - ) O. ( - ) A. A. ( - ) A. A. ( - ) A. A. A. ( - ) A. ( - ) A. ( - ) A. A. O. O. O. ( - ) O. ( - ) O. O. O. ( - ) O. O. O. ( - ) O. ( - ) ",
+    "a.",
+    "bwsmith is hated",
+    "0. 0.",
+    "he is axed",
+    "what did he do wrong",
+    "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+    "I'm ready, professorr.",
+    "he crashed .gay",
+    "$r$||^^**~~Random Guy",
+    "...",
+    "{NAME}",
+    "with a 525 ssl handshake error",
+    "I'm ready professor",
+    "yesternight",
+    "mario **^^▒▒▒▒▒▒▒▒▒▄▄▄▄▒▒▒▒▒▒▒ ▒▒▒▒▒▒▄▀▀▓▓▓▀█▒▒▒▒▒▒ ▒▒▒▒▄▀▓▓▄██████▄▒▒▒▒ ▒▒▒▄█▄█▀░░▄░▄░█▀▒▒▒▒ ▒▒▄▀░██▄░░▀░▀░▀▄▒▒▒▒ ▒▒▀▄░░▀░▄█▄▄░░▄█▄▒▒▒ ▒▒▒▒▀█▄▄░░▀▀▀█▀▒▒▒▒▒ ▒▒▒▄▀▓▓▓▀██▀▀█▄▀▀▄▒▒ ▒▒█▓▓▄▀▀▀▄█▄▓▓▀█░█▒▒ ▒▒▀▄█░░░░░█▀▀▄▄▀█▒▒▒ ▒▒▒▄▀▀▄▄▄██▄▄█▀▓▓█▒▒ ▒▒█▀▓█████████▓▓▓█▒▒ ▒▒█▓▓██▀▀▀▒▒▒▀▄▄█▀▒▒ ▒▒▒▀▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒",
+    "e. om",
+    "e. o.",
+    "Double U Doube U",
+    "mar e. o.",
+    "%% ^^**SUPER MARIO BROTHERS",
+    "Double U Double U Double U Double U",
+    "Mario bros",
+    "Super mario bros",
+    "Double U Double U Double U Double U Double U Double U Double U Double U Double U Double U Double U Double U Double U Double U Double U Double U Double U Double U Double U Double U Double U Double U Double U",
+    "Ape escape",
+    "oaoaoaooao",
+    "Double U W",
+    "Fuck you",
+    "Holy fucking shit",
+    "I'm my name is 2045",
+    ".gay is flooding",
+    "Schblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzjblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzjblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzjblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzjblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzjblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzjblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzjblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzjblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzj",
+    "double u w",
+    "Double U",
+    "proof?",
+    "blnzjk",
+    "guys i gtg",
+    "bye",
+    "Gayface.ai",
+    "Ass",
+    "7joke",
+    "15+1",
+    "HIV",
+    "stfu",
+    "no",
+    "Can you shut the fuck up",
+    "it's prob monki ",
+    "Stupid bot",
+    "it's jy",
+    "blnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzjblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzjblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzjblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzjblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzjblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzjblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzjblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzjblnzjklnzjblnblnklnzjblnzjklnzjblnklnblnzj"
+];
+let ackgro = [`i will piss yo foots and give it fungus`,
+`ok shitbag thats it`,
+`shit for brains go make live a piss`,
+`suck my long monkey cock`,
+`fuck ass i will toss shit at your ass`,
+`ok thats it time to shit on your life`,
+`shut up arsebreath`,
+`yeah dick face`,
+`eat my monkey arse`,
+`fuck off belly itcher`,
+`ok butt sniffer`,
+`you sand ass fucking camel fucker`,
+`cock juggling thunder cunt`,
+`you are such a cunt rag`,
+`are you always this much of a bitch`,
+`hoe fucking ass wipe shut up`,
+`dick man`,
+`ew you are a poop face`,
+`your a failure`,
+`lard`,
+`you are a shitty jizz`,
+`gay`,
+`your a fucking joke`,
+`mr lard bucket`,
+`little puke baby`,
+`your a fucking loser`,
+`you want to bully me ok your a piss baby`,
+`YOU IS PEDO`,
+`mongrel`,
+`asshole`,
+`cuck`,
+`ew i hate you `,
+`me no like you i kick your shit`,
+`oxygen thief`,
+`poo face`,
+`piss wizard`,
+`poop ass `,
+`pig slop`,
+`pimple face`,
+`eat my shit`,
+`lolcow `,
+`mr piggy wiggy`,
+`penis sucker`,
+`you fucking ass zebra fucker`,
+`fuck you `,
+`shit ass trash bag`,
+`i will piss on your shit and give you aids`,
+`shut up toilet baby`,
+`arse hole`,
+`shame on you goyim`,
+`squid brain`,
+`go away saggy fuck`,
+`mr Rumple foreskin`,
+`piece of garbage`,
+`cum guzzler`,
+`ok baby face get back to crying`,
+`fucking ass rammer go eat a aids `,
+`get back to work fucker`];
+
+let acked = [`why you so mean to me mane i only a robot`,`just because im a clanker doesnt mean i dont deserve respect mane`,`im reporting you for mean scary words that offend me im distraught mane`];
+window.hates = [];
+let ackd = [
+    `{ANGRY} {POLL} :: {SCREEN:POLL} {RESPOND2}`,
+    `{NORMAL} {POLL} :: {SCREEN:POLL} {RESPOND1}`,
+    `{INTRIGUE} {POLL} :: {SCREEN:POLL} {RESPOND2}`,
+
+    `{ANGRY} {MESSAGE} :: {SCREEN:MESSAGE} {RESPONDMAD}`,
+    `{NORMAL} {MESSAGE} :: {SCREEN:MESSAGE} {RESPOND}`
+];
+
+const myName = 'fuckface.ai (annoying)';
+const angerless = true;
+const sadless = true;
+const aggressiveHigh = ['kill','die','hate','stupid','idiot','trash','garbage','pathetic','loser','moron','dumb','shut up','nigger','faggot','bitch','asshole','retard'];
+const aggressiveMedium = ['annoying','whatever','boring','lame','suck','sucks','stop','ugh'];
+const aggressiveLow = ['meh','no','leave','go away'];
+const threatWords = ['gonna','will','should','better','or else','watch out','you better'];
+const personalAttacks = ['you are','you\'re','ur such','u are','you','monkey','monky'];
+
+//precompiled once instead of on every message
+let NEG_RE = /monky|monkey|you/;
+let HIGH_RE = new RegExp(aggressiveHigh.join('|'));
+let MED_RE = new RegExp(aggressiveMedium.join('|'));
+let LOW_RE = new RegExp(aggressiveLow.join('|'));
+let HIGH_SET = new Set(aggressiveHigh);
+let MED_SET = new Set(aggressiveMedium);
+let PERSONAL_RES = personalAttacks.map(p => ({ p, re: new RegExp(`${p}\\s+(\\w+)`, 'g') }));
+let YOU_THREAT_RE = /you (will|should|better|gonna)/;
+
+const Utils = {
+  Aggression: (messag) => {
+    if (!messag || typeof messag !== 'string' || messag.trim().length === 0) return 0;
+    const original = messag;
+    const lower = messag.toLowerCase();
+    if (!NEG_RE.test(lower)) return 0;
+
+    const cleaned = lower.trim()
+      .replace(/\bu\b/g, 'you')
+      .replace(/\bur\b/g, 'your')
+      .replace(/(.)\1{2,}/g, '$1$1');
+
+    let score = 0;
+    for (const word of cleaned.split(/\s+/)) {
+      const cw = word.replace(/[^\w]/g, '');
+      if (HIGH_RE.test(cw)) score += 0.4;
+      else if (MED_RE.test(cw)) score += 0.25;
+      else if (LOW_RE.test(cw)) score += 0.1;
+    }
+
+    const capsCount = (original.match(/[A-Z]/g) || []).length;
+    const capsRatio = capsCount / original.length;
+    if (capsRatio > 0.5 && original.length > 3) score += 0.3;
+    else if (capsRatio > 0.3) score += 0.15;
+
+    if ((original.match(/!/g) || []).length > 2) score += 0.2;
+    if (/[!?]{2,}/.test(original)) score += 0.15;
+
+    for (const threat of threatWords) if (cleaned.includes(threat)) score += 0.2;
+    if (YOU_THREAT_RE.test(cleaned)) score += 0.4;
+
+    for (const { p, re } of PERSONAL_RES) {
+      if (!cleaned.includes(p)) continue;
+      const matches = cleaned.match(re);
+      if (!matches) continue;
+      for (const match of matches) {
+        const word = match.split(' ').pop();
+        if (HIGH_SET.has(word) || MED_SET.has(word)) score += 0.3;
+      }
+    }
+
+    return Math.min(score / 10, 1);
+  }
+};
+
+
+
+
+document.body.insertAdjacentHTML('beforeend',`
+<div style="z-index:99999;color:white;position:absolute;top:0px;right:0px;">
+Silence <input type="range" min="0" max="1" step="0.01" id="chanceTime"><br>
+Decay <input type="range" min="1" max="5" step="0.01" id="decayAmt"><br>
+<canvas id="eDraw" style="background:black;" width="200" height="90"></canvas><br>
+<button id="nig">Reward</button>
+<button onclick="window.Joel.reset();">Reset</button>
+</div>
+`);
+
+
+//levenshtein with two reusable typed rows, NO per-call matrix allocation
+let _lp = new Int32Array(256), _lc = new Int32Array(256);
+function lev(a, b, max = Infinity) { //NUSOI.... WHAT IS THIS....
+  if (a === b) return 0;
+  if (a.length < b.length) { const t = a; a = b; b = t; } // b is the shorter one
+  const la = a.length, lb = b.length;
+  if (lb === 0) return la;
+  if (la - lb > max) return max + 1;
+  if (_lp.length < lb + 1) { _lp = new Int32Array(lb + 1); _lc = new Int32Array(lb + 1); }
+  let prev = _lp, cur = _lc;
+  for (let j = 0; j <= lb; j++) prev[j] = j;
+  for (let i = 1; i <= la; i++) {
+    const ca = a.charCodeAt(i - 1);
+    cur[0] = i;
+    let rowMin = i;
+    for (let j = 1; j <= lb; j++) {
+      let v = prev[j - 1] + (ca === b.charCodeAt(j - 1) ? 0 : 1);
+      const del = prev[j] + 1; if (del < v) v = del;
+      const ins = cur[j - 1] + 1; if (ins < v) v = ins;
+      cur[j] = v;
+      if (v < rowMin) rowMin = v;
+    }
+    if (rowMin > max) return max + 1;
+    const t = prev; prev = cur; cur = t;
+  }
+  return prev[lb];
+}
+
+function Similarity(a, b, min = 0) {
+  if (a === b) return 1;
+  if (a.length === 0 || b.length === 0) return 0;
+  const maxLength = Math.max(a.length, b.length);
+  if (min > 0) {
+    const allowed = Math.floor((1 - min) * maxLength);
+    const d = lev(a, b, allowed);
+    return d > allowed ? 0 : 1 - d / maxLength;
+  }
+  return 1 - lev(a, b) / maxLength;
+}
+
+function wordLevenmergenshmergenbergsteinGoldistance(seqA, seqB){//last function but more israeli
+  const m = seqA.length, n = seqB.length;
+  if (m === 0) return n;
+  if (n === 0) return m;
+  let prev = new Array(n + 1), cur = new Array(n + 1);
+  for (let j = 0; j <= n; j++) prev[j] = j;
+  for (let i = 1; i <= m; i++) {
+    cur[0] = i;
+    const x = seqA[i - 1];
+    for (let j = 1; j <= n; j++) {
+      if (x === seqB[j - 1]) cur[j] = prev[j - 1];
+      else {
+        let v = prev[j]; if (cur[j - 1] < v) v = cur[j - 1]; if (prev[j - 1] < v) v = prev[j - 1];
+        cur[j] = v + 1;
+      }
+    }
+    const t = prev; prev = cur; cur = t;
+  }
+  return prev[n];
+}
+function normalizeNgramDiff(diff,factor=500){
+	return (factor-Math.min(diff,factor))/factor;
+}
+
+let seperators = ['.','!','?',','];
+const SEP_RE = /[.!?,]/g;
+
+let NGRAM_SIZE = 10;
+let NGRAM_THRESHOLD = 0.80;
+let MAX_CANDIDATES = 300;
+
+function isSimilarToPast(text) {
+  for (let i = 0; i < ackgro.length; i++) if (normalizeNgramDiff(wordLevenmergenshmergenbergsteinGoldistance(ackgro[i], text)) >= 0.85) return true;
+  return false;
+}
+
+const tokenize = str => str.split(/\s+/).filter(Boolean);
+const cleanTokens = str => tokenize(str).map(t => t.replace(SEP_RE, '').toLowerCase()).filter(Boolean);
+
+const indexes = new WeakMap();
+
+function addEntry(st, entry) {
+  const n = st.n, contextRange = st.range;
+  const raw = tokenize(entry);
+  const clean = raw.map(t => t.replace(SEP_RE, ''));
+  const lower = clean.map(t => t.toLowerCase());
+
+  for (let i = 0; i < raw.length - 1; i++) {
+    if (!clean[i + 1]) continue;
+    const gramKey = lower.slice(Math.max(0, i - n + 1), i + 1).join(' ').trim();
+    if (!gramKey) continue;
+
+    const m = raw[i].match(/[.!?,]/);
+    const contextWords = lower.slice(Math.max(0, i + 1 - contextRange), i + 1);
+    const pair = {
+      next: clean[i + 1],
+      seperator: m ? m[0] : '',
+      contextWords,
+      contextStr: contextWords.join(' ')
+    };
+    let list = st.byGram.get(gramKey);
+    if (!list) st.byGram.set(gramKey, list = []);
+    list.push(pair);
+    st.all.push(pair);
+    // inverted index: word -> pairs whose context contains it
+    for (const w of new Set(contextWords)) {
+      let wl = st.byWord.get(w);
+      if (!wl) st.byWord.set(w, wl = []);
+      wl.push(pair);
+    }
+  }
+}
+
+function buildIndex(corpus, contextRange, n) {
+  let st = indexes.get(corpus);
+  if (!st || st.n !== n || st.range !== contextRange || st.count > corpus.length) {
+    st = { count: 0, n, range: contextRange, byGram: new Map(), byWord: new Map(), all: [], fuzzyVocab: new Map() };
+    indexes.set(corpus, st);
+  }
+  for (let e = st.count; e < corpus.length; e++) addEntry(st, corpus[e]);
+  st.count = corpus.length;
+  return st;
+}
+
+function randomPair(st) {
+  if (st.all.length < 1) return { nextToken: '', previousPunctuation: '' };
+  const p = st.all[Math.floor(Math.random() * st.all.length)];
+  return { nextToken: p.next, previousPunctuation: p.seperator };
+}
+
+const FUZZY_CACHE = new Map();
+function fuzzyWordMatch(a, b) {
+  if (!a || !b) return 0;
+  if (a === b) return 1;
+  if (a.length < 3 || b.length < 3) return 0;
+  const key = a < b ? a + '\u0000' + b : b + '\u0000' + a; // symmetric
+  let hit = FUZZY_CACHE.get(key);
+  if (hit !== undefined) return hit;
+  if (FUZZY_CACHE.size > 300000) FUZZY_CACHE.clear();
+  hit = fuzzyWordMatchRaw(a, b);
+  FUZZY_CACHE.set(key, hit);
+  return hit;
+}
+function fuzzyWordMatchRaw(a, b) {
+  let sim = Similarity(a, b, 0.34);
+  if (sim > 0) return sim;
+  if (a.includes(b) || b.includes(a)) return Math.min(a.length, b.length) / Math.max(a.length, b.length) * 0.8;
+  return 0;
+}
+
+function sequenceSimilarity(a, b) {
+  if (!a.length || !b.length) return 0;
+  let prev = new Array(b.length + 1), cur = new Array(b.length + 1);
+  for (let j = 0; j <= b.length; j++) prev[j] = j;
+  for (let i = 1; i <= a.length; i++) {
+    cur[0] = i;
+    for (let j = 1; j <= b.length; j++) {
+      let sim = fuzzyWordMatch(a[i - 1], b[j - 1]);
+      let substitution = prev[j - 1] + (sim >= 0.72 ? 0 : sim > 0 ? 0.55 : 1);
+      cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, substitution);
+    }
+    let t = prev; prev = cur; cur = t;
+  }
+  return Math.max(0, 1 - prev[b.length] / Math.max(a.length, b.length));
+}
+
+function fuzzyNgramMatch(storedWords, inputWords) {
+  if (!storedWords.length || !inputWords.length) return 0;
+  let best = 0;
+  let maxWidth = Math.min(storedWords.length, inputWords.length, 5);
+  for (let width = 1; width <= maxWidth; width++) {
+    let a = storedWords.slice(-width), b = inputWords.slice(-width);
+    let sim = sequenceSimilarity(a, b);
+    let widthWeight = 0.45 + 0.11 * width;
+    let score = sim * widthWeight;
+    if (width === 1 && a[0] === b[0]) score = Math.max(score, 0.58);
+    if (score > best) best = score;
+  }
+  return best;
+}
+
+function attentionScore(pair, inputWords) {
+  if (!pair.contextWords.length || !inputWords.length) return 0;
+  let total = 0, weightTotal = 0;
+  let seen = new Set();
+  for (let i = 0; i < inputWords.length; i++) {
+    let inputWord = inputWords[i];
+    if (!inputWord || inputWord.length < 2) continue;
+    let best = 0, bestJ = -1;
+    for (let j = 0; j < pair.contextWords.length; j++) {
+      let candidateWord = pair.contextWords[j];
+      let match = fuzzyWordMatch(inputWord, candidateWord);
+      if (match <= 0) continue;
+      let distance = Math.abs((inputWords.length - 1 - i) - (pair.contextWords.length - 1 - j));
+      let distanceWeight = 0.52 + 0.48 / (1 + distance * 0.16);
+      let value = match * distanceWeight;
+      if (value > best) { best = value; bestJ = j; }
+    }
+    if (best > 0) {
+      let positionWeight = 0.55 + 0.45 * (i + 1) / inputWords.length;
+      if (bestJ >= 0 && seen.has(bestJ)) best *= 0.72;
+      if (bestJ >= 0) seen.add(bestJ);
+      total += best * positionWeight;
+      weightTotal += positionWeight;
+    }
+  }
+  return weightTotal ? total / weightTotal : 0;
+}
+
+function weightedPick(scored) {
+  if (!scored.length) return null;
+  let maxScore = -Infinity;
+  for (let i = 0; i < scored.length; i++) if (scored[i].score > maxScore) maxScore = scored[i].score;
+  let weights = new Array(scored.length), total = 0;
+  for (let i = 0; i < scored.length; i++) {
+    let weight = Math.exp(Math.max(-10, (scored[i].score - maxScore) * 5));
+    weights[i] = weight;
+    total += weight;
+  }
+  let roll = Math.random() * total;
+  for (let i = 0; i < scored.length; i++) {
+    roll -= weights[i];
+    if (roll <= 0) return scored[i].p;
+  }
+  return scored[scored.length - 1].p;
+}
+
+let MAX_SCAN = 800; // max candidate pairs scored per generated token
+
+// vocab words that fuzzily match `w` (cached per input word)
+function fuzzyVocab(st, w) {
+  let r = st.fuzzyVocab.get(w);
+  if (r) return r;
+  r = [];
+  for (const v of st.byWord.keys()) if (fuzzyWordMatch(w, v) > 0) r.push(v);
+  if (st.fuzzyVocab.size > 5000) st.fuzzyVocab.clear();
+  st.fuzzyVocab.set(w, r);
+  return r;
+}
+
+// Instead of scoring every pair in the corpus, only score pairs that share
+// (fuzzily) at least one word with the input -- every other pair scores 0
+// and would be discarded anyway. Rare words are preferred, with a cap.
+function gatherCandidates(st, inputWords, inputGram, n) {
+  const exactList = st.byGram.get(inputGram.join(' '));
+  if (exactList && exactList.length) return exactList; // only exact matches survive when any exist
+  const lists = [], seenWords = new Set();
+  for (const w of inputWords) {
+    if (!w || w.length < 2 || seenWords.has(w)) continue;
+    seenWords.add(w);
+    const exactW = st.byWord.get(w);
+    if (exactW) lists.push(exactW);
+    if (w.length >= 3) for (const v of fuzzyVocab(st, w)) if (v !== w) lists.push(st.byWord.get(v));
+  }
+  if (!lists.length) return st.all.length > MAX_SCAN ? sampleArr(st.all, MAX_SCAN) : st.all;
+  lists.sort((a, b) => a.length - b.length);
+  const out = new Set();
+  for (const l of lists) {
+    if (out.size >= MAX_SCAN) break;
+    const room = MAX_SCAN - out.size;
+    if (l.length <= room) for (const p of l) out.add(p);
+    else for (const p of sampleArr(l, room)) out.add(p);
+  }
+  return [...out];
+}
+function sampleArr(arr, k) {
+  const out = new Array(k);
+  for (let i = 0; i < k; i++) out[i] = arr[(Math.random() * arr.length) | 0];
+  return out;
+}
+
+function predict(st, tokens, contextRange, n, generatedTokens = []) {
+  if (!st.all.length) return { nextToken: '', previousPunctuation: '' };
+  if (!tokens.length) return randomPair(st);
+
+  let inputWords = tokens.slice(-Math.max(contextRange, n, 1));
+  let inputGram = inputWords.slice(-n);
+  let recent = generatedTokens.slice(-8);
+  let recentCounts = new Map();
+  for (let i = 0; i < recent.length; i++) recentCounts.set(recent[i], (recentCounts.get(recent[i]) || 0) + 1);
+
+  let candidates = [];
+  const scanSet = gatherCandidates(st, inputWords, inputGram, n);
+  for (let i = 0; i < scanSet.length; i++) {
+    let p = scanSet[i];
+    let storedContext = p.contextWords;
+    let storedGram = storedContext.slice(-n);
+    let exactGram = storedGram.length === inputGram.length && storedGram.every((w, j) => w === inputGram[j]);
+    let gramSim = exactGram ? 1 : fuzzyNgramMatch(storedGram, inputGram);
+    let attention = attentionScore(p, inputWords);
+    if (gramSim < 0.12 && attention < 0.18) continue;
+
+    let nextLower = p.next.toLowerCase();
+    let repetitionCount = recentCounts.get(nextLower) || 0;
+    let repetitionPenalty = Math.min(0.34, repetitionCount * 0.11);
+    let immediateRepeatPenalty = generatedTokens.length && generatedTokens[generatedTokens.length - 1] === nextLower ? 0.24 : 0;
+    let score = gramSim * 1.35 + attention * 0.42 - repetitionPenalty - immediateRepeatPenalty;
+    if (exactGram) score += 0.35;
+    candidates.push({ p, score, gramSim, attention, exactGram });
+  }
+
+  if (!candidates.length) {
+    for (let i = 0; i < scanSet.length; i++) {
+      let p = scanSet[i];
+      let attention = attentionScore(p, inputWords);
+      if (attention > 0.08) candidates.push({ p, score: attention * 0.55 - ((recentCounts.get(p.next.toLowerCase()) || 0) * 0.1), gramSim: 0, attention, exactGram: false });
+    }
+  }
+  if (!candidates.length) return randomPair(st);
+
+  candidates.sort((a, b) => b.score - a.score);
+  let exact = candidates.filter(c => c.exactGram);
+  let pool = exact.length ? exact : candidates;
+  let bestScore = pool[0].score;
+  let eligible = pool.filter(c => c.score >= bestScore - (exact.length ? 0.9 : 0.42));
+  if (eligible.length > MAX_CANDIDATES) eligible.length = MAX_CANDIDATES;
+  let picked = weightedPick(eligible);
+  return { nextToken: picked.next, previousPunctuation: picked.seperator };
+}
+function nextToken(input, corpus, contextRange = 10, n = NGRAM_SIZE) {
+  n = Math.max(1, Math.floor(n));
+  return predict(buildIndex(corpus, contextRange, n), cleanTokens(input), contextRange, n);
+}
+
+function appendageWhyDoesChromeMakeThisFunctionApartOfTheFuckingWindowObjectOnItsOwn(text, l=10,lset=ack){
+	const J = window.Joel;
+	const range = J.contextRange, n = Math.max(1, Math.floor(J.ngramSize));
+	const st = buildIndex(lset, range, n);
+	const tokens = cleanTokens(text);
+	let predictedText = '';
+	let generatedTokens = [];
+	let pendingPunctuation = '';
+	for(let i=0;i<l;i++){
+		const result = predict(st, tokens, range, n,generatedTokens);
+		predictedText += (result.previousPunctuation.length > 0 ? result.previousPunctuation+' ' : ' ')+result.nextToken;
+		const t = result.nextToken.toLowerCase();
+		if (t) { tokens.push(t); generatedTokens.push(t); }
+	}
+	return predictedText;
+};
+// yield to the browser so the page stays responsive during generation
+const _yc = new MessageChannel(); let _yres = null;
+_yc.port1.onmessage = () => { const r = _yres; _yres = null; if (r) r(); };
+let _lastYield = performance.now();
+function yieldToBrowser() {
+  _lastYield = performance.now();
+  return new Promise(res => { _yres = res; _yc.port2.postMessage(0); });
+}
+async function appendageAsync(text, l = 10, lset = ack) {
+  const J = window.Joel;
+  const range = J.contextRange, n = Math.max(1, Math.floor(J.ngramSize));
+  const st = buildIndex(lset, range, n);
+  const tokens = cleanTokens(text);
+  let predictedText = '';
+  const generatedTokens = [];
+  for (let i = 0; i < l; i++) {
+    const result = predict(st, tokens, range, n, generatedTokens);
+    predictedText += (result.previousPunctuation.length > 0 ? result.previousPunctuation + ' ' : ' ') + result.nextToken;
+    const t = result.nextToken.toLowerCase();
+    if (t) { tokens.push(t); generatedTokens.push(t); }
+    if (performance.now() - _lastYield > 6) await yieldToBrowser();
+  }
+  return predictedText;
+}
+const filters = {
+  nigga: 'buddy', nigger: 'eskimo', faggot: 'cigarette',
+  fag: 'cig', raped: 'helped', rape: 'help', sex: 'axe'
+};
+// longest keys first so "faggot" matches before "fag"
+const FILTER_RE = new RegExp(
+  Object.keys(filters).sort((a, b) => b.length - a.length).join('|'), 'gi'
+);
+function nullify(txt) {
+  return txt.replace(FILTER_RE, m => filters[m.toLowerCase()]);
+}
+window.trainingData = ack;
+window.trainingData = window.trainingData.map(r => nullify(r));
+for (let i = 0; i < ack.length; i++) ack[i] = nullify(ack[i]);
+for (let i = 0; i < ackgro.length; i++) ackgro[i] = nullify(ackgro[i]);
+window.Joel = {
+	nextToken: (inp) => {return nextToken(inp,window.trainingData,window.Joel.contextRange,window.Joel.ngramSize);},
+	appendage:appendageWhyDoesChromeMakeThisFunctionApartOfTheFuckingWindowObjectOnItsOwn,
+	appendageAsync:appendageAsync,
+	contextRange:10,
+	ngramSize:NGRAM_SIZE,
+    e:{r:0,f:0},
+    adjustR:0,
+    adjustF:0,
+    rankAffection:{'0':{r:-0.01,f:0.02},'1':{r:-0.01,f:0.01},'2':{r:-0.02,f:-0.02}},
+    //                    1   -1        1    -0.5          1    0.5
+    pastInfrac:0,
+    maxInfrac:3,
+    overload:false,
+    decay:1,
+
+    c:0,
+    contextLimit:15,
+    context:''
+};
+
+
+const round4 = x => Math.round(x * 10000) / 10000;
+
+let rounds = 0;
+let ctx;
+try {ctx = document.getElementById('eDraw').getContext('2d');console.log(ctx); }catch(e){console.log(e);}
+let lastFrame = '';
+function reset(){
+window.Joel = {
+	nextToken: (inp) => {return nextToken(inp,window.trainingData,window.Joel.contextRange,window.Joel.ngramSize);},
+	appendage:appendageWhyDoesChromeMakeThisFunctionApartOfTheFuckingWindowObjectOnItsOwn,
+	appendageAsync:appendageAsync,
+	contextRange:10,
+	ngramSize:NGRAM_SIZE,
+    e:{r:0,f:0},
+    adjustR:0,
+    adjustF:0,
+    rankAffection:{'0':{r:-0.01,f:0.02},'1':{r:-0.01,f:0.01},'2':{r:-0.02,f:-0.02}},
+    //                    1   -1        1    -0.5          1    0.5
+    pastInfrac:0,
+    maxInfrac:3,
+    overload:false,
+    decay:1,
+
+    c:0,
+    contextLimit:50,
+    context:'',
+};
+window.Joel.reset = reset;
+};
+
+window.Joel.reset = reset;
+function EFLOW(){
+   const J = window.Joel;
+   rounds+=100;
+
+   if(J.c > J.contextLimit){
+       { const nc = nullify(J.context); ack.push(nc); window.trainingData.push(nc); }
+       J.c=0; J.context='';
+   }
+   if(rounds > 10000){
+     rounds=0;
+     if(J.pastInfrac > 0)J.pastInfrac--;
+   }
+   if(J.pastInfrac > J.maxInfrac*2)J.pastInfrac=J.maxInfrac*2;
+   J.overload = J.pastInfrac > J.maxInfrac;
+
+   const ranges = J.overload ? 3 : 1;
+   const split = J.overload ? 8 : 10;
+   const aR = J.adjustR;
+   const aF = J.adjustF;
+
+   J.e.r+=aR/split;
+   J.e.f+=aF/split;
+   if(aR < 0 || J.e.r < -ranges)J.adjustR+=J.decay/1000;
+   if(aR > 0 || J.e.r > ranges)J.adjustR-=J.decay/1000;
+   if(aF < 0 || J.e.f < -ranges)J.adjustF+=J.decay/1000;
+   if(aF > 0 || J.e.f > ranges)J.adjustF-=J.decay/1000;
+
+   J.e.r = Math.max(-ranges,Math.min(round4(J.e.r + aR / split),ranges));
+   J.e.f = Math.max(-ranges,Math.min(round4(J.e.f + aF / split),ranges));
+
+     setTimeout(() => {EFLOW();},100);
+   if(!ctx)return;
+
+   ctx.clearRect(0,0,200,90);
+   ctx.font = "16px Monospace";
+   if(J.overload){
+     ctx.fillStyle='red';
+     ctx.fillText('PISSED',10,50);
+   } else {
+     ctx.fillStyle='green';
+     ctx.fillText('normal maybe',10,50);
+   }
+   ctx.fillStyle='white';
+   ctx.fillText(JSON.stringify(J.e),10,80);
+
+
+
+
+}
+EFLOW();
+
+let q = 0;
+let c = 0;
+document.getElementById('nig').onclick = () => {
+  let val = prompt('how much');
+  if(val.length < 1 || isNaN(val))return;
+
+  window.Joel.adjustR = parseFloat(val);
+};
+document.getElementById('chanceTime').oninput = () => {c = document.getElementById('chanceTime').value; };
+document.getElementById('decayAmt').oninput = () => {window.Joel.decay = document.getElementById('decayAmt').value; };
+let entities = {};
+const SEED_MAP = {'you':'me','me':'you','your':'im','ur':'me',"you're":"i am","youre":"i am",'i':'you'};
+const SEED_RE = /\byou\b|\bme\b|\byour\b|\bur\b|\byou're\b|\byoure\b|\bi\b/g;
+function seedify(inp){
+  return inp.replace(SEED_RE, c => SEED_MAP[c]);
+}
+fuckface.onclick = () => {
+
+        const d = {guid:'you',text:fuckfacei.value};
+
+
+        if(typeof entities['you'] == 'undefined')entities['you']={rating:{r:0,f:0}, ranking:1 };
+        if(d.text.length > 1 && !d.text.includes('[[') && !ack.includes(d.text)){ack.push(nullify(d.text));window.trainingData.push(nullify(d.text));}
+        if(1<2){
+            let choiceCorpus = ack;
+
+            let similarPast = isSimilarToPast(d.text);
+            if(
+                (Math.random() > 0.9-Utils.Aggression(d.text))
+            ){
+                 console.log(
+					'he got mad as fuck::::::::\n'+
+					d.text+'\n (Math.random() > 0.9-Utils.Aggression(d.text): '+
+					(Math.random() > 0.9-Utils.Aggression(d.text))+
+					'\n positivity:'+(0.9-Utils.Aggression(d.text)).toString()
+				 );
+                 entities[d.guid].rating.r-=0.005; entities[d.guid].rating.f+=0.005;
+                 if (!ackgro.includes(d.text)) ackgro.push(nullify(d.text));
+                 if(entities[d.guid].rating.r < -0.2 && entities[d.guid].rating.f > 0.2){
+                     if(bz){
+                         window.hates.push('you');
+                     }
+                 } else {
+                    if(1<2){if(window.hates.includes('you')){window.hates.splice(window.hates.indexOf('you'),1);}}
+                 }
+
+                 if(similarPast){window.Joel.pastInfrac++; rounds=0;}
+            } else {
+                 entities[d.guid].rating.r+=0.01; entities[d.guid].rating.f-=0.01;
+
+            }
+            window.Joel.adjustR = entities[d.guid].rating.r;
+            window.Joel.adjustF = entities[d.guid].rating.f;
+                window.Joel.c++;
+                window.Joel.context+=d.text;
+                if((window.hates.includes(d.guid) || window.Joel.overload) && !sadless)choiceCorpus = angerless ? acked : ackgro;
+                q--;
+                let r = '- '+await window.Joel.appendageAsync(
+                            seedify(window.Joel.context)+seperators[Math.floor(Math.random()*seperators.length)],
+                            10+Math.floor(Math.random()*50),
+                            choiceCorpus
+                       );
+r = nullify(r);
+r = window.Joel.overload ? r.toUpperCase() : r;
+                window.Joel.context+=r;
+
+
+        }
+
+};
+
+
+
+},2000);
+
+</script>
